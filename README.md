@@ -31,7 +31,58 @@ How to write code for show text  and meaning of it [   const [show, setShow] = u
 
  Learned the meaning of this line [onClick={() => setShow(!show)}]   which triggers when clicked
 
+
+
+ ## LINE BY LINE EXPLANATION
+
+
+ A)   import React, { useState } from 'react';  =
+
+Imports React and the useState hook from the React library.
+useState allows the component to maintain and update internal state.
+
+
+B)    function ToggleText() {  =
+
+Declares a functional React component named ToggleText.
  
+
+ C)     const [show, setShow] = useState(true); =
+ 
+Declares a state variable show initialized to true.
+setShow is a function to update the value of show.
+show is used to control whether a certain piece of text is visible. 
+
+
+D)       return (   =
+Begins the JSX return statement, defining what this component renders.
+jsx
+
+ <div>  =
+Creates a <div> element as a container for the button and text.
+jsx
+ 
+ <button onClick={() => setShow(!show)}>  =
+Adds a <button> element.
+The onClick event is attached with an inline arrow function.
+When clicked, it calls setShow(!show) which toggles the value of show between true and false.
+jsx
+
+
+ E)     {show ? "Hide" : "Show"} Text  =
+ 
+Sets the button label with a conditional expression:
+If show is true, the button displays "Hide Text".
+If show is false, the button displays "Show Text"
+
+
+F)   {show && <p>Hello, this is the text!</p>} =
+
+Conditionally renders a paragraph <p> with the text "Hello, this is the text!".
+Uses the logical AND (&&) operator:
+If show is true, the paragraph appears.
+If show is false, nothing is rendered.
+
 
 
 
