@@ -33,7 +33,7 @@ How to write code for show text  and meaning of it [   const [show, setShow] = u
 
 
 
- ## LINE BY LINE EXPLANATION
+ ## EXPLANATION
 
 
  A)   import React, { useState } from 'react';  =
