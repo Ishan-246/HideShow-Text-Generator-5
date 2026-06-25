@@ -81,4 +81,4 @@ F)   {show && <p>Hello, this is the text!</p>} =
 Conditionally renders a paragraph <p> with the text "Hello, this is the text!".
 Uses the logical AND (&&) operator:
 If show is true, the paragraph appears.
-If show is false, nothing is rendered
+If show is false, nothing  rendered
